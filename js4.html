@@ -8,15 +8,14 @@
         function calculateDivision() {  
             var result = document.getElementById("result");
 
-            // Get input values
             var a = document.getElementById("side1").value;
             var b = document.getElementById("side2").value;
             
-            // Convert input values to integers
+     
             a = parseInt(a);
             b = parseInt(b);
             
-            // Check for division by zero
+        
             if (b === 0) {
                 result.innerHTML = "Error: Division by zero is not allowed.";
                 return;
