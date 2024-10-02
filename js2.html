@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>  
+    <script>
+        function sumNumbers(){  
+            var result = document.getElementById("result");  
+            var num1 = parseFloat(document.getElementById("side1").value);  
+            var num2 = parseFloat(document.getElementById("side2").value);
+            var num3 = parseFloat(document.getElementById("side3").value);  
+    
+            result.innerHTML = num1 + num2 + num3 / 2;  
+        }  
+    </script>  
+</head>
+<body>  
+    <form>  
+        <input type="text" id="side1" placeholder="Enter 1st side len">  
+        <input type="text" id="side2" placeholder="Enter 2nd side len">  
+        <input type="text" id="side3" placeholder="Enter 3rd side len">
+        <button type="button" onclick="sumNumbers()">Click me!</button>  
+    </form>  
+    <p id="result"></p>  
+</body>
+</html>
